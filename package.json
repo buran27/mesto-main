@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -b main -r https://github.com/USERNAME/mesto-production.git"
+    "deploy": "gh-pages -d dist -b main -r https://github.com/buran27/mesto-production.git"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",

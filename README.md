@@ -32,4 +32,4 @@ npm run deploy  # сборка и публикация папки dist на GitH
   проект при каждом `push` в ветку `main`.
 - Вручную: командой `npm run deploy` (библиотека `gh-pages`).
 
-Ссылка на опубликованный проект: https://USERNAME.github.io/mesto-production/
+Ссылка на опубликованный проект: https://buran27.github.io/mesto-production/
