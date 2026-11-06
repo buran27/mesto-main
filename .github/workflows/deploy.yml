@@ -9,7 +9,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
+    env:
+      PUBLIC_PAGES_TOKEN: ${{ secrets.PUBLIC_PAGES_TOKEN }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -27,6 +29,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
+        if: env.PUBLIC_PAGES_TOKEN != ''
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.PUBLIC_PAGES_TOKEN }}
